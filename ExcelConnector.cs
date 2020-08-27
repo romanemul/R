@@ -13,8 +13,7 @@ namespace RRD
         // command Sample
         // select * from [sheet1$];
         
-            // project deployment musi byt pro platformu x64 jinak ACE.OLEDB. not installed on this machine.
-
+        // project deployment musi byt pro platformu x64 jinak ACE.OLEDB. not installed on this machine.
 
         private string _ConnectionString;
         private string _FilePath;
