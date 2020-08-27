@@ -120,7 +120,6 @@ namespace RRD
         private void MakeWorksheet()
         {
         
-        
         }
 
 
@@ -216,7 +215,6 @@ namespace RRD
             {
                 tmpDataTable = this.Connector(FilePath,Command);
             }
-
             return tmpDataTable;
         }
 
@@ -288,7 +286,6 @@ namespace RRD
             return TmpDataTable; 
         }
 
-
         public System.Data.DataTable WorksheetPartToDataTable(string Path, string WorksheetName, string StartRangeR1C1, string EndRangeR1C1) 
         {
             System.Data.DataTable TmpDataTable = new System.Data.DataTable();
@@ -296,7 +293,6 @@ namespace RRD
             string Command = "SELECT * FROM [" + WorksheetName + "$" + StartRangeR1C1 + ":" + EndRangeR1C1 + "]";
             TmpDataTable = this.Connector(Path, Command);
             return TmpDataTable;
-
         }
 
         private string RCtoAbsolute(int Row,int Column)
@@ -307,7 +303,6 @@ namespace RRD
         public string RCToAlphabet(int columnNumber)
         {
             //https://stackoverflow.com/questions/181596/how-to-convert-a-column-number-e-g-127-into-an-excel-column-e-g-aa
-
 
             int dividend = columnNumber;
             string columnName = String.Empty;
